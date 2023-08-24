@@ -1,13 +1,22 @@
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
+import { tasks as data } from './task.js'
+import {useState, useEffect } from 'react';
 
-function HolaMundo() {
+
+function App() {
+
+  const [tasks, setTasks] = useState([])
+
+  useEffect(() =>{
+    setTasks(data) 
+  },[])
   return (
     <>
       <TaskForm/>
-      <TaskList/>
+      <TaskList tasks={tasks}/>
     </>
   )
 }
 
-export default HolaMundo
+export default App
