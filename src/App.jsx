@@ -11,9 +11,13 @@ function App() {
   useEffect(() =>{
     setTasks(data) 
   },[])
+
+  function createTask(task){
+    setTasks([...tasks,task])
+  }
   return (
     <>
-      <TaskForm/>
+      <TaskForm createTask= {createTask} />
       <TaskList tasks={tasks}/>
     </>
   )

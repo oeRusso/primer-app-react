@@ -1,4 +1,4 @@
-# TODO: min 3hs 36min
+# TODO: min 3hs 38min
 # FIXME: volver a ver como funciuona el useeffect y investigar por que el map recive un callback pero despues de los argumentos no tiene {} sino ()  = esto es pq los () dentro del map se llaman expresiones y sirve para retornar un valor sin la encesidad de poner explicitamente la palabra return;
 
 
