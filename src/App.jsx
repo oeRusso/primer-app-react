@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() =>{
     setTasks(data) 
-  },[])
+  },[]) //esto te trae las tareas del array
 
   function createTask(task){
     setTasks([...tasks,task])
